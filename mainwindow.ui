@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>302</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="velocity_layout">
+      <item>
+       <widget class="QLabel" name="v_label">
+        <property name="text">
+         <string>Initial Velocity</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="v_x"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="v_y"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="v_z"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="radius_layout">
+      <item>
+       <widget class="QLabel" name="r_label">
+        <property name="text">
+         <string>Initial Radius</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="r_x"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="r_y"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="r_z"/>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="w_br_layout">
+      <item>
+       <widget class="QLabel" name="w_br_label">
+        <property name="text">
+         <string>Omega B-&gt;R</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="w_br_x"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="w_br_y"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="w_br_z"/>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="angle_layout">
+      <item>
+       <widget class="QLabel" name="yaw_label">
+        <property name="text">
+         <string>Yaw</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="yaw"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="pitch_label">
+        <property name="text">
+         <string>Pitch</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pitch"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="roll_label">
+        <property name="text">
+         <string>Roll</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="roll"/>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="disturbance_torque_layout">
+      <item>
+       <widget class="QLabel" name="td_label">
+        <property name="text">
+         <string>Disturbance Torque</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="td_x"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="td_y"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="td_z"/>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <layout class="QHBoxLayout" name="misc_layout">
+      <item>
+       <widget class="QLabel" name="step_label">
+        <property name="text">
+         <string>Step</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="step"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="time_label">
+        <property name="text">
+         <string>Final Time</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="final_time"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="compute">
+        <property name="text">
+         <string>Compute</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>624</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
